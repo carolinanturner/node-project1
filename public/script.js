@@ -27,7 +27,7 @@ const singerJSON = await getJSON();
 
         let img = document.createElement("img");
         section.append(img);
-        img.src="https://node-project1-8gtg.onrender.com/images/" + singer.img;
+        img.src="https://node-project1-8gtg.onrender.com/" + singer.img;
 
         let ul = document.createElement("ul");
         section.append(ul);
