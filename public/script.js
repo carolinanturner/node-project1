@@ -1,7 +1,7 @@
 //Carolina Turner CSCE 242
 const getJSON = async ()=>{
     try{
-        let response = await fetch("http://localhost:3000/api/singers");
+        let response = await fetch("https://node-project1-8gtg.onrender.com/");
        return await response.json();
     }   catch (error){
     console.log("error retrieving json");
@@ -27,7 +27,7 @@ const singerJSON = await getJSON();
 
         let img = document.createElement("img");
         section.append(img);
-        img.src="http://localhost:3000/" + singer.img;
+        img.src="https://node-project1-8gtg.onrender.com/images/" + singer.img;
 
         let ul = document.createElement("ul");
         section.append(ul);
